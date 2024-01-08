@@ -1,0 +1,9 @@
+%p#notice= notice
+
+%p
+  %b Topic:
+  = @help_group.topic
+
+= link_to 'Edit', edit_help_group_path(@help_group)
+\|
+= link_to 'Back', help_groups_path

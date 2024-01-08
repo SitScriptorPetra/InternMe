@@ -1,0 +1,21 @@
+%h1 Listing help_groups
+
+%table
+  %thead
+    %tr
+      %th Topic
+      %th
+      %th
+      %th
+
+  %tbody
+    - @help_groups.each do |help_group|
+      %tr
+        %td= help_group.topic
+        %td= link_to 'Show', help_group
+        %td= link_to 'Edit', edit_help_group_path(help_group)
+        %td= link_to 'Destroy', help_group, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Help group', new_help_group_path
