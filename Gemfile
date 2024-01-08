@@ -74,3 +74,5 @@ gem "json", "~> 2.7"
 gem "hamlit", "~> 3.0"
 
 gem "simple_form", "~> 5.3"
+
+gem "devise", "~> 4.9"
