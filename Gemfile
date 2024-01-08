@@ -50,6 +50,9 @@ group :development, :test do
 end
 
 group :development do
+
+  gem "hamlit-rails", "~> 0.2.3"
+
   # Use console on exceptions pages [https://github.com/rails/web-console]
   gem "web-console"
 
@@ -67,3 +70,7 @@ group :test do
 end
 
 gem "json", "~> 2.7"
+
+gem "hamlit", "~> 3.0"
+
+gem "simple_form", "~> 5.3"
